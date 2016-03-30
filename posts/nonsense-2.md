@@ -2,7 +2,7 @@
 .. title: Nonsense 2
 .. slug: nonsense-2
 .. date: 2016-03-30 05:24:39 UTC
-.. tags: 
+.. tags: mathjax 
 .. category: 
 .. link: 
 .. description: 
