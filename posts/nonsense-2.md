@@ -10,8 +10,7 @@
 -->
 
 This is complete freaking _nonsense_.
-An h1 header
-============
+#An h1 header
 
 Paragraphs are separated by a blank line.
 
@@ -25,6 +24,7 @@ look like:
 Note that --- not considering the asterisk --- the actual text
 content starts at 4-columns in.
 
+##An h2 header
 
 As you probably guessed, indented 4 spaces. By the way, instead of
 indenting the block, you can use delimited blocks, if you like:
