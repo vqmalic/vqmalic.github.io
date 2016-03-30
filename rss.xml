@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>Vincent Malic</title><link>http://vqmalic.github.io/</link><description>Vincent Malic's Website</description><atom:link href="http://vqmalic.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 30 Mar 2016 05:33:53 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Nonsense 2</title><link>http://vqmalic.github.io/posts/nonsense-2/</link><dc:creator>Vincent Malic</dc:creator><description>&lt;div&gt;&lt;p&gt;This is complete freaking &lt;em&gt;nonsense&lt;/em&gt;.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Vincent Malic</title><link>http://vqmalic.github.io/</link><description>Vincent Malic's Website</description><atom:link type="application/rss+xml" href="http://vqmalic.github.io/rss.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 30 Mar 2016 05:34:30 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Nonsense 2</title><link>http://vqmalic.github.io/posts/nonsense-2/</link><dc:creator>Vincent Malic</dc:creator><description>&lt;div&gt;&lt;p&gt;This is complete freaking &lt;em&gt;nonsense&lt;/em&gt;.&lt;/p&gt;
 &lt;h2&gt;An h1 header&lt;/h2&gt;
 &lt;p&gt;Paragraphs are separated by a blank line.&lt;/p&gt;
 &lt;p&gt;2nd paragraph. &lt;em&gt;Italic&lt;/em&gt;, &lt;strong&gt;bold&lt;/strong&gt;, and &lt;code&gt;monospace&lt;/code&gt;. Itemized lists&lt;br&gt;
@@ -28,4 +28,55 @@ delimited block for Pandoc to syntax highlight it:&lt;/p&gt;
     &lt;span class="c1"&gt;# (but not *too* quick)&lt;/span&gt;
     &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><guid>http://vqmalic.github.io/posts/nonsense-2/</guid><pubDate>Wed, 30 Mar 2016 05:24:39 GMT</pubDate></item></channel></rss>
+&lt;/pre&gt;
+
+
+&lt;h4&gt;An h3 header&lt;/h4&gt;
+&lt;p&gt;Now a nested list:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;First, get these ingredients:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;carrots&lt;/li&gt;
+&lt;li&gt;celery&lt;/li&gt;
+&lt;li&gt;lentils&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Boil some water.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dump everything in the pot and follow&lt;br&gt;
+    this algorithm:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;find wooden spoon
+uncover pot
+stir
+cover pot
+balance wooden spoon precariously on pot handle
+wait 10 minutes
+goto first step (or shut off burner when done)
+&lt;/pre&gt;
+
+
+&lt;p&gt;Do not bump wooden spoon or it will fall.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Notice again how text always lines up on 4-space indents (including&lt;br&gt;
+that last line which continues item 3 above).&lt;/p&gt;
+&lt;p&gt;Here's a link to &lt;a href="http://foo.bar"&gt;a website&lt;/a&gt;, to a &lt;a href="http://vqmalic.github.io/posts/nonsense-2/local-doc.html"&gt;local&lt;br&gt;
+doc&lt;/a&gt;, and to a &lt;a href="http://vqmalic.github.io/posts/nonsense-2/#an-h2-header"&gt;section heading in the current&lt;br&gt;
+doc&lt;/a&gt;. Here's a footnote &lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="http://vqmalic.github.io/posts/nonsense-2/#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Tables can look like this:&lt;/p&gt;
+&lt;p&gt;size  material      color&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;9     leather       brown&lt;br&gt;
+10    hemp canvas   natural&lt;br&gt;
+11    glass         transparent&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;Footnote text goes here. &lt;a class="footnote-backref" href="http://vqmalic.github.io/posts/nonsense-2/#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;&lt;/div&gt;</description><guid>http://vqmalic.github.io/posts/nonsense-2/</guid><pubDate>Wed, 30 Mar 2016 05:24:39 GMT</pubDate></item></channel></rss>
