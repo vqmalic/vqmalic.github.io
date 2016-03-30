@@ -195,6 +195,9 @@ td,
 th {
   padding: 0;
 }
+.footnote {
+  font-size: 12px;
+}
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
   *,
@@ -1087,7 +1090,7 @@ html {
 }
 body {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.846;
   color: #666666;
   background-color: #ffffff;
@@ -1269,19 +1272,19 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 56px;
+  font-size: 28px;
 }
 h2,
 .h2 {
-  font-size: 45px;
+  font-size: 26px;
 }
 h3,
 .h3 {
-  font-size: 34px;
+  font-size: 24px;
 }
 h4,
 .h4 {
-  font-size: 24px;
+  font-size: 22px;
 }
 h5,
 .h5 {
@@ -1289,7 +1292,7 @@ h5,
 }
 h6,
 .h6 {
-  font-size: 14px;
+  font-size: 18px;
 }
 p {
   margin: 0 0 11.5px;
