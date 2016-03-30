@@ -135,11 +135,11 @@ NAVIGATION_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "vqmalictheme"
+THEME = "malic"
 
 # Primary color of your theme. This will be used to customize your theme and
 # auto-generate related colors in POSTS_SECTION_COLORS. Must be a HEX value.
-THEME_COLOR = '#5670d4'
+THEME_COLOR = '#FFFFFF'
 
 # POSTS and PAGES contains (wildcard, destination, template) tuples.
 #
@@ -170,7 +170,7 @@ POSTS = (
     ("posts/*.md", "posts", "post.tmpl"),
 )
 PAGES = (
-    ("pages/*.md", "", "post.tmpl"),
+    ("pages/*.md", "", "story.tmpl"),
 )
 
 
