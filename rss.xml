@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>Vincent Malic</title><link>http://vqmalic.github.io/</link><description>Vincent Malic's Website</description><atom:link href="http://vqmalic.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 30 Mar 2016 05:29:55 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Nonsense 2</title><link>http://vqmalic.github.io/posts/nonsense-2/</link><dc:creator>Vincent Malic</dc:creator><description>&lt;div&gt;&lt;p&gt;This is complete freaking &lt;em&gt;nonsense&lt;/em&gt;.&lt;br&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vincent Malic</title><link>http://vqmalic.github.io/</link><description>Vincent Malic's Website</description><atom:link rel="self" href="http://vqmalic.github.io/rss.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 30 Mar 2016 05:31:40 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Nonsense 2</title><link>http://vqmalic.github.io/posts/nonsense-2/</link><dc:creator>Vincent Malic</dc:creator><description>&lt;div&gt;&lt;p&gt;This is complete freaking &lt;em&gt;nonsense&lt;/em&gt;.&lt;br&gt;
 An h1 header&lt;br&gt;
 ============&lt;/p&gt;
 &lt;p&gt;Paragraphs are separated by a blank line.&lt;/p&gt;
@@ -11,4 +11,21 @@ look like:&lt;/p&gt;
 &lt;li&gt;the other one&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Note that --- not considering the asterisk --- the actual text&lt;br&gt;
-content starts at 4-columns in.&lt;/p&gt;&lt;/div&gt;</description><guid>http://vqmalic.github.io/posts/nonsense-2/</guid><pubDate>Wed, 30 Mar 2016 05:24:39 GMT</pubDate></item></channel></rss>
+content starts at 4-columns in.&lt;/p&gt;
+&lt;p&gt;As you probably guessed, indented 4 spaces. By the way, instead of&lt;br&gt;
+indenting the block, you can use delimited blocks, if you like:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;define foobar() {
+    print "Welcome to flavor country!";
+}
+&lt;/pre&gt;
+
+
+&lt;p&gt;(which makes copying &amp;amp; pasting easier). You can optionally mark the&lt;br&gt;
+delimited block for Pandoc to syntax highlight it:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
+&lt;span class="c1"&gt;# Quick, count to ten!&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="c1"&gt;# (but not *too* quick)&lt;/span&gt;
+    &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</description><guid>http://vqmalic.github.io/posts/nonsense-2/</guid><pubDate>Wed, 30 Mar 2016 05:24:39 GMT</pubDate></item></channel></rss>
