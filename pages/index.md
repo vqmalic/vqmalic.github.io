@@ -9,4 +9,4 @@
 .. type: text
 -->
 
-Write your page here.
+Hi, I'm Vincent Malic and I'm an Information Science PhD student at Indiana University, Bloomington. My broad research interests are machine learning, natural language processing, and network analysis. I'm particularly interested in learning the best way to apply this in humanities research. 
