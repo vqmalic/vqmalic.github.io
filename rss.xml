@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>Vincent Malic</title><link>http://vqmalic.github.io/</link><description>Vincent Malic's Website</description><atom:link rel="self" href="http://vqmalic.github.io/rss.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 30 Mar 2016 13:38:29 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Nonsense 2</title><link>http://vqmalic.github.io/posts/nonsense-2/</link><dc:creator>Vincent Malic</dc:creator><description>&lt;div&gt;&lt;p&gt;This is complete freaking &lt;em&gt;nonsense&lt;/em&gt;.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vincent Malic</title><link>http://vqmalic.github.io/</link><description>Vincent Malic's Website</description><atom:link type="application/rss+xml" rel="self" href="http://vqmalic.github.io/rss.xml"></atom:link><language>en</language><lastBuildDate>Wed, 30 Mar 2016 13:48:06 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Nonsense 2</title><link>http://vqmalic.github.io/posts/nonsense-2/</link><dc:creator>Vincent Malic</dc:creator><description>&lt;div&gt;&lt;p&gt;This is complete freaking &lt;em&gt;nonsense&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;к сожалению я не говорю по-русски.&lt;br&gt;
 Diemžēl es nerunāju latviski.&lt;br&gt;
 可惜我不會說中文&lt;br&gt;
-[e^{ix} = \cos x + i \sin x]&lt;/p&gt;
+\(e^{ix} = \cos x + i \sin x\)&lt;/p&gt;
 &lt;h2&gt;An h1 header&lt;/h2&gt;
 &lt;p&gt;Paragraphs are separated by a blank line.&lt;/p&gt;
 &lt;p&gt;2nd paragraph. &lt;em&gt;Italic&lt;/em&gt;, &lt;strong&gt;bold&lt;/strong&gt;, and &lt;code&gt;monospace&lt;/code&gt;. Itemized lists&lt;br&gt;
