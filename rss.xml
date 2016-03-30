@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vincent Malic</title><link>http://vqmalic.github.io/</link><description>Vincent Malic's Website</description><atom:link rel="self" type="application/rss+xml" href="http://vqmalic.github.io/rss.xml"></atom:link><language>en</language><lastBuildDate>Wed, 30 Mar 2016 05:25:00 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Nonsense 2</title><link>http://vqmalic.github.io/posts/nonsense-2/</link><dc:creator>Vincent Malic</dc:creator><description>&lt;p&gt;This is complete freaking &lt;em&gt;nonsense&lt;/em&gt;.&lt;/p&gt;</description><guid>http://vqmalic.github.io/posts/nonsense-2/</guid><pubDate>Wed, 30 Mar 2016 05:24:39 GMT</pubDate></item></channel></rss>
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>Vincent Malic</title><link>http://vqmalic.github.io/</link><description>Vincent Malic's Website</description><atom:link href="http://vqmalic.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 30 Mar 2016 05:29:55 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Nonsense 2</title><link>http://vqmalic.github.io/posts/nonsense-2/</link><dc:creator>Vincent Malic</dc:creator><description>&lt;div&gt;&lt;p&gt;This is complete freaking &lt;em&gt;nonsense&lt;/em&gt;.&lt;br&gt;
+An h1 header&lt;br&gt;
+============&lt;/p&gt;
+&lt;p&gt;Paragraphs are separated by a blank line.&lt;/p&gt;
+&lt;p&gt;2nd paragraph. &lt;em&gt;Italic&lt;/em&gt;, &lt;strong&gt;bold&lt;/strong&gt;, and &lt;code&gt;monospace&lt;/code&gt;. Itemized lists&lt;br&gt;
+look like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;this one&lt;/li&gt;
+&lt;li&gt;that one&lt;/li&gt;
+&lt;li&gt;the other one&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note that --- not considering the asterisk --- the actual text&lt;br&gt;
+content starts at 4-columns in.&lt;/p&gt;&lt;/div&gt;</description><guid>http://vqmalic.github.io/posts/nonsense-2/</guid><pubDate>Wed, 30 Mar 2016 05:24:39 GMT</pubDate></item></channel></rss>
