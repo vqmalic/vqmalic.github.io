@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vincent Malic</title><link>http://vqmalic.github.io/</link><description>Vincent Malic's Website</description><atom:link rel="self" href="http://vqmalic.github.io/rss.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 30 Mar 2016 05:31:40 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Nonsense 2</title><link>http://vqmalic.github.io/posts/nonsense-2/</link><dc:creator>Vincent Malic</dc:creator><description>&lt;div&gt;&lt;p&gt;This is complete freaking &lt;em&gt;nonsense&lt;/em&gt;.&lt;br&gt;
-An h1 header&lt;br&gt;
-============&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>Vincent Malic</title><link>http://vqmalic.github.io/</link><description>Vincent Malic's Website</description><atom:link href="http://vqmalic.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 30 Mar 2016 05:33:53 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Nonsense 2</title><link>http://vqmalic.github.io/posts/nonsense-2/</link><dc:creator>Vincent Malic</dc:creator><description>&lt;div&gt;&lt;p&gt;This is complete freaking &lt;em&gt;nonsense&lt;/em&gt;.&lt;/p&gt;
+&lt;h2&gt;An h1 header&lt;/h2&gt;
 &lt;p&gt;Paragraphs are separated by a blank line.&lt;/p&gt;
 &lt;p&gt;2nd paragraph. &lt;em&gt;Italic&lt;/em&gt;, &lt;strong&gt;bold&lt;/strong&gt;, and &lt;code&gt;monospace&lt;/code&gt;. Itemized lists&lt;br&gt;
 look like:&lt;/p&gt;
@@ -12,6 +11,7 @@ look like:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;Note that --- not considering the asterisk --- the actual text&lt;br&gt;
 content starts at 4-columns in.&lt;/p&gt;
+&lt;h3&gt;An h2 header&lt;/h3&gt;
 &lt;p&gt;As you probably guessed, indented 4 spaces. By the way, instead of&lt;br&gt;
 indenting the block, you can use delimited blocks, if you like:&lt;/p&gt;
 &lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;define foobar() {
