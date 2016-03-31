@@ -8,6 +8,7 @@
 .. description: 
 .. type: text
 -->
+
 Text segmentation is a common task in natural language processing where the goal is to take a text and divide it into "meaningful units". This is usually done as a preprocessing step for a more intricate task like text classification or topic modeling. The subsequent task of interest is usually what dictates what is meant by "meaningful units." Take, for example, the following sentence.
 
 > President Obama lives in Washington, D.C. at the White House.
