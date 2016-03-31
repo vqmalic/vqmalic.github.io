@@ -58,7 +58,7 @@ Here's a better parsing of the Chinese sentence:
 
 Much better. In fact, the English translation is a perfect translation when the pecularities of Chinese word order and tense are accounted for. 
 
-I touched on the segmentation problem for Modern Chinese as the problem-solving approaches used here are the natural starting points for doing the same with Classical Chinese. Needless to say, Modern Chinese is a huge language and the problem of Chinese word segmentation (中文分詞) is extremely well researched. Although there still is no solid consensus in _the_ accepted way to parse Modern Chinese [^3] there are excellent tools out there. When working with modern Chinese I use [the segmenter developed by the brains at Stanford](http://nlp.stanford.edu/software/segmenter.shtml) though I've heard high praise of [the Jieba segmenter](https://github.com/fxsjy/jieba) written in Python.
+I touched on the segmentation problem for Modern Chinese as the problem-solving approaches used here are the natural starting points for doing the same with Classical Chinese. Needless to say, Modern Chinese is a huge language and the problem of Chinese word segmentation (中文分詞) is extremely well researched. Although there still is no solid consensus in _the_ accepted way to parse Modern Chinese[^3] there are excellent tools out there. When working with modern Chinese I use [the segmenter developed by the brains at Stanford](http://nlp.stanford.edu/software/segmenter.shtml) though I've heard high praise of [the Jieba segmenter](https://github.com/fxsjy/jieba) written in Python.
 
 ##Text Segmentation in Classical Chinese
 
