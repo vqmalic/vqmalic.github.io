@@ -32,3 +32,8 @@ Now, if "white" occurs in conjunction with "house", it will be considered a sing
 > ++ President ++ Obama ++ lives ++ in ++ Washington, D.C. ++ at ++ the ++ White House ++ . ++ 
 
 ##Text Segmentation in Chinese 
+
+The text segmentation task for Chinese is, unsurprisingly, quite different from English language text segmentation. By means of illustration, take the following example sentence.
+
+> 昨天我的電腦壞了，不知道怎麼辦。
+> *Yesterday my computer broke, I don't know what to do about it.* 
