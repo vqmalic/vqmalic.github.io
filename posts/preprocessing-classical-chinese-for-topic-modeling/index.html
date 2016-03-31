@@ -114,6 +114,13 @@ Text segmentation is a common task in natural language processing where the goal
 <p>Much better. In fact, the English translation is a perfect translation when the pecularities of Chinese word order and tense are accounted for. </p>
 <p>I touched on the segmentation problem for Modern Chinese as the problem-solving approaches used here are the natural starting points for doing the same with Classical Chinese. Needless to say, Modern Chinese is a huge language and the problem of Chinese word segmentation (中文分詞) is extremely well researched. Although there still is no solid consensus in <em>the</em> accepted way to parse Modern Chinese<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup> there are excellent tools out there. When working with modern Chinese I use <a href="http://nlp.stanford.edu/software/segmenter.shtml">the segmenter developed by the brains at Stanford</a> though I've heard high praise of <a href="https://github.com/fxsjy/jieba">the Jieba segmenter</a> written in Python.</p>
 <h3>Text Segmentation in Classical Chinese</h3>
+<p>When segmenting classical Chinese, there are two questions that we can retain from the discussions above.</p>
+<ol>
+<li>What is the most effective way to segment the text <em>in preparation for</em> some subsequent machine learning task?</li>
+<li>What is the most effective way to group characters that <em>should</em> be together, especially characters that in combination constitute a specific word?</li>
+</ol>
+<p>I'm specifically interested in segmenting the texts in preparation for <a href="http://www.scottbot.net/HIAL/index.html@p=19113.html">topic modeling with Latent Dirichlet Allocation</a>. As for the best way to group characters, when I reach a point like this in a research project I cross my fingers and simply hope that someone else has already extensively investigated this question and I can simply use some pre-built package. Unfortunately, the amount of research that has been conducted in Classical Chinese word segmentation is quite small, particularly when compared to the enormous amount of research that has been done on Modern Chinese<sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup>. Some research has been done on <em>sentence</em> segmentation<sup id="fnref:5"><a class="footnote-ref" href="#fn:5" rel="footnote">5</a></sup><sup>,</sup><sup id="fnref:6"><a class="footnote-ref" href="#fn:6" rel="footnote">6</a></sup> because Classical Chinese, in addition to not having spaces, very frequently does not even have punctuation. I've also seen research on how to automatically identify names and biographical information in Classical Chinese <sup id="fnref:7"><a class="footnote-ref" href="#fn:7" rel="footnote">7</a></sup>, which can be considered a specialized subset of the word segmentation task. </p>
+<p>[N]: <a href="http://124.16.154.130:8080/lis/CN/article/downloadArticleFile.do?attachType=PDF&amp;id=13669">钱智勇, 周建忠, 童国平, &amp; 苏新宁. (2014). 基于 HMM 的楚辞自动分词标注研究. <em>图书情报工作</em>, 58(04), 105-110.</a></p>
 <div class="footnote">
 <hr>
 <ol>
@@ -125,6 +132,18 @@ Text segmentation is a common task in natural language processing where the goal
 </li>
 <li id="fn:3">
 <p>I'm sure many Chinese-speakers would, in fact, disagree with how I manually parsed the above example sentence.  <a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">↩</a></p>
+</li>
+<li id="fn:4">
+<p>This is, of course, unsurprising given the imbalance of incentives that prompt a computational linguist or computer scientist to research segmentation of Modern vs. Classical Chinese. The volume of Modern text is much larger, and the reasons to segment Modern (improve a Chinese search engine, knowledge-mine Weibo, compare academic publishing in Mandarin and Chinese, targeted ad engines, etc.) are both more numerous and more attractive than for Classical (Chinese history is cool). <a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">↩</a></p>
+</li>
+<li id="fn:5">
+<p><a href="http://www.aclweb.org/anthology/W10-4103">Huang, H. H., Sun, C. T., &amp; Chen, H. H. (2010). Classical chinese sentence segmentation. <em>In Proceedings of CIPS-SIGHAN Joint Conference on Chinese Language Processing</em> (pp. 15-22).</a> <a class="footnote-backref" href="#fnref:5" rev="footnote" title="Jump back to footnote 5 in the text">↩</a></p>
+</li>
+<li id="fn:6">
+<p><a href="http://www.arocmag.com/getarticle/?aid=b840f964b6c91519">张合, 王晓东, 杨建宇, &amp; 周卫东. (2009). 一种基于层叠 CRF 的古文断句与句读标记方法倡. <em>计算机应用研究</em>, 26(9).</a> <a class="footnote-backref" href="#fnref:6" rev="footnote" title="Jump back to footnote 6 in the text">↩</a></p>
+</li>
+<li id="fn:7">
+<p><a href="http://www.anthology.aclweb.org/Y/Y15/Y15-1011.pdf">Liu, C. L., Huang, C. K., Wang, H., &amp; Bol, P. K. (2015). Toward algorithmic discovery of biographical information in local gazetteers of ancient China. In <em>Proceedings of the 29th Pacific Asia Conference on Language, Information and Computation</em> (pp. 87-95).</a> <a class="footnote-backref" href="#fnref:7" rev="footnote" title="Jump back to footnote 7 in the text">↩</a></p>
 </li>
 </ol>
 </div>
