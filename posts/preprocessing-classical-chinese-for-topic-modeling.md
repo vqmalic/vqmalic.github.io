@@ -62,6 +62,19 @@ I touched on the segmentation problem for Modern Chinese as the problem-solving 
 
 ##Text Segmentation in Classical Chinese
 
+When segmenting classical Chinese, there are two questions that we can retain from the discussions above.
+
+1. What is the most effective way to segment the text _in preparation for_ some subsequent machine learning task?
+2. What is the most effective way to group characters that _should_ be together, especially characters that in combination constitute a specific word?
+
+I'm specifically interested in segmenting the texts in preparation for [topic modeling with Latent Dirichlet Allocation](http://www.scottbot.net/HIAL/index.html@p=19113.html). As for the best way to group characters, when I reach a point like this in a research project I cross my fingers and simply hope that someone else has already extensively investigated this question and I can simply use some pre-built package. Unfortunately, the amount of research that has been conducted in Classical Chinese word segmentation is quite small, particularly when compared to the enormous amount of research that has been done on Modern Chinese[^4]. Some research has been done on _sentence_ segmentation[^5]<sup>,</sup>[^6] because Classical Chinese, in addition to not having spaces, very frequently does not even have punctuation. I've also seen research on how to automatically identify names and biographical information in Classical Chinese [^7], which can be considered a specialized subset of the word segmentation task. 
+
 [^1]: Weird sentence, I know, but I wanted a sentence with the word computer in it and this one seemed amusing enough. 
 [^2]: My Chinese-speaking colleagues will probably cringe at this, but it's just for explanatory purposes!
 [^3]: I'm sure many Chinese-speakers would, in fact, disagree with how I manually parsed the above example sentence. 
+[^4]: This is, of course, unsurprising given the imbalance of incentives that prompt a computational linguist or computer scientist to research segmentation of Modern vs. Classical Chinese. The volume of Modern text is much larger, and the reasons to segment Modern (improve a Chinese search engine, knowledge-mine Weibo, compare academic publishing in Mandarin and Chinese, targeted ad engines, etc.) are both more numerous and more attractive than for Classical (Chinese history is cool).
+[^5]: [Huang, H. H., Sun, C. T., & Chen, H. H. (2010). Classical chinese sentence segmentation. _In Proceedings of CIPS-SIGHAN Joint Conference on Chinese Language Processing_ (pp. 15-22).](http://www.aclweb.org/anthology/W10-4103)
+[^6]: [张合, 王晓东, 杨建宇, & 周卫东. (2009). 一种基于层叠 CRF 的古文断句与句读标记方法倡. _计算机应用研究_, 26(9).](http://www.arocmag.com/getarticle/?aid=b840f964b6c91519)
+[^7]: [Liu, C. L., Huang, C. K., Wang, H., & Bol, P. K. (2015). Toward algorithmic discovery of biographical information in local gazetteers of ancient China. In _Proceedings of the 29th Pacific Asia Conference on Language, Information and Computation_ (pp. 87-95).](http://www.anthology.aclweb.org/Y/Y15/Y15-1011.pdf)
+
+[N]: [钱智勇, 周建忠, 童国平, & 苏新宁. (2014). 基于 HMM 的楚辞自动分词标注研究. _图书情报工作_, 58(04), 105-110.](http://124.16.154.130:8080/lis/CN/article/downloadArticleFile.do?attachType=PDF&id=13669)
