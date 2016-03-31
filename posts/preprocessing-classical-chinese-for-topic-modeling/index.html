@@ -83,22 +83,51 @@ Text segmentation is a common task in natural language processing where the goal
 
 <p>Perhaps the simplest way to segment this sentence is just to isolate every single word.</p>
 <blockquote>
-<p>++ President ++ Obama ++ lives ++ in ++ Washington ++ , ++ D.C. ++ at ++ the ++ White ++ House ++ . ++</p>
+<p>|| President || Obama || lives || in || Washington || , || D.C. || at || the || White || House || . ||</p>
 </blockquote>
 <p>This might be perfectly suitable for what you plan to do with the segmented data. However, for many tasks, this somewhat brute-force approach to segmentation simply won't suffice. For example, you might be trying to study co-occurrence patterns in your corpus. In aggregate, you might notice, hm, "white" and "house" occur together but this signal may be overwhelmed by instances where "white" and "house" appear separately (and therefore, in association with other words). The word Washington occurs sometimes with D.C., but in other places in your corpus it refers to the state, or the historical individual, or the university. </p>
 <p>It therefore may be advantageous to merge these phrases together and treat them as a single semantic unit. One way of doing this might look like this:</p>
 <blockquote>
-<p>++ President Obama ++ lives ++ in ++ Washington, D.C. ++ at ++ the ++ White House ++ . ++</p>
+<p>|| President Obama || lives || in || Washington, D.C. || at || the || White House || . ||</p>
 </blockquote>
 <p>Now, if "white" occurs in conjunction with "house", it will be considered a single semantic unit with its own special properties in whatever subsequent task you apply on the data. The word "white" can occur in isolation, in other contexts, but if it appears in the phrase "white house" then it will retain, together with the word "house", its associations with all things presidential. The same goes with Washington, D.C.. However, as is the case with many other things NLP, there are exceptions. If we group "President Obama" together as a single phrase, then your subsequent algorithm may consider mentions of "President Obama" and "Obama" without the title to be referring to different entities. This <em>may</em> be what you are after; for example, you may be investigating whether or not outlets in opposition to Obama are more likely to refer to him without the title "President." However, outside of specific cases you will most likely want to consider "Obama" to be a standalone semantic unit and then measure its association with words like "President" or "Barack". The final segmentation then may look like this:</p>
 <blockquote>
-<p>++ President ++ Obama ++ lives ++ in ++ Washington, D.C. ++ at ++ the ++ White House ++ . ++ </p>
+<p>|| President || Obama || lives || in || Washington, D.C. || at || the || White House || . || </p>
 </blockquote>
 <h3>Text Segmentation in Chinese</h3>
 <p>The text segmentation task for Chinese is, unsurprisingly, quite different from English language text segmentation. By means of illustration, take the following example sentence.</p>
 <blockquote>
-<p>昨天我的電腦壞了，不知道怎麼辦。<br><em>Yesterday my computer broke, I don't know what to do about it.</em> </p>
+<p>昨天我的電腦突然轉出了一個人的說話的聲音，怎麼回事？<br><em>Yesterday my computer suddently emitted the sound of some persons's voice, how did that happen? <sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup></em></p>
 </blockquote>
+<p>As with our English example we could just brute force it. But first, notice that there are no spaces in Chinese. We'll have to split by character. </p>
+<blockquote>
+<p>|| 昨 || 天 || 我 || 的 || 電 || 腦 || 突 || 然 || 轉 || 出 || 了 || 一 || 個 || 人 || 的 || 說 || 話 || 的 || 聲 || 音 || ， || 怎 || 麼 || 回 || 事 || ？ ||<br><em>past day I (possession) electricity brain suddenly like transfer out one unit person (possession) speak talk (possession) sound sound , how particle return thing ? <sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup></em></p>
+</blockquote>
+<p>Obviously this does not work well. In fact, it's worse than our brute force approach to the English sentence, and this is an obvious consequence of some properties unique to Chinese. English has spaces, so the base unit of analysis is the <em>word</em>, which we can effortlessly extract from between spaces, and the difficulty comes about in answering the question, which <em>words</em> should we consider together as a single <em>phrase</em>? Most words will be considered in isolation so the brute force method gets a good chunk right.</p>
+<p>However, in Chinese the base unit of analysis is the <em>character</em> and the question to address is which <em>characters</em> should we consider as a single <em>word</em>? Words in Chinese can be anywhere from 1 character in isolation to a combination of up to 3 characters. At a scale much larger than in English, many multi-character Chinese words possess a meaning that is some combination of its constituent characters. A classic Chinese 101 case is the word for computer, 電腦, which consists of the characters for electricity and brain. There are examples of this in English (e.g. "football", "blackboard") but more often than not the constituent meaning of a multisyllabic word is cloaked by its obscure (to most modern English speakers) Greek/Latin/etc. origins (e.g. "psychology"). </p>
+<p>In other cases, the combinatorial element of merging characters to form words is a bit more hazy. Take, for example, the word 聲音. The two characters here on their own <em>both</em> also mean "sound", but in a more general sense. There are other two-character words that draw on one of these characters to incorporate its general "sound" meaning: 聲調 <strong>tone</strong>, 口音 <strong>accent</strong>, 音樂 <strong>music</strong>. However <strong>the</strong> two-character word 聲音 is the canonical Modern Chinese word for <strong>the</strong> English word "sound". Chinese-speakers are aware that each constituent character has a "sound-like meaning" but in only special instances would they use 聲 or 音 by themselves in that capacity. </p>
+<p>Thus in Chinese segmentation it is absolutely crucial to identify which characters <em>should</em> go together because it is a step necessary for identifying <em>words</em>. In English, we are identifying <em>phrases</em>. The importance of this distinction is visible if we compare the relative success of the brute force, split everything method in English and in Chinese. In English, we're losing phrases like "White House" or "Washington, D.C." to noise but the individually extracted words are still meaningful. However, in Chinese, we're losing actual words and the output is an incoherent jumble of characters many of which, in isolation, carry a only vague, fuzzy meaning. </p>
+<p>Here's a better parsing of the Chinese sentence:</p>
+<blockquote>
+<p>|| 昨天 || 我的 || 電腦 || 突然 || 轉出了 || 一個 || 人的 || 說話的 || 聲音 || ， || 怎麼 || 回事 || ？ ||<br><em>Yesterday my computer suddenly emitted a person's speech's sound, how happen?</em></p>
+</blockquote>
+<p>Much better. In fact, the English translation is a perfect translation when the pecularities of Chinese word order and tense are accounted for. </p>
+<p>I touched on the segmentation problem for Modern Chinese as the problem-solving approaches used here are the natural starting points for doing the same with Classical Chinese. Needless to say, Modern Chinese is a huge language and the problem of Chinese word segmentation (分詞) is extremely well researched. Although there still is no solid consensus in <em>the</em> accepted way to parse Modern Chinese <sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup> there are excellent tools out there. When working with modern Chinese I use <a href="http://nlp.stanford.edu/software/segmenter.shtml">the segmenter developed by the brains at Stanford</a> though I've heard high praise of <a href="https://github.com/fxsjy/jieba">the Jieba segmenter</a> written in Python.</p>
+<h3>Text Segmentation in Classical Chinese</h3>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Weird sentence, I know, but I wanted a sentence with the word computer in it and this one seemed amusing enough.  <a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>My Chinese-speaking colleagues will probably cringe at this, but it's just for explanatory purposes! <a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+<li id="fn:3">
+<p>I'm sure many Chinese-speakers would, in fact, disagree with how I manually parsed the above example sentence.  <a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">↩</a></p>
+</li>
+</ol>
+</div>
 </div>
     </div>
     <aside class="postpromonav"><nav></nav></aside></article>
