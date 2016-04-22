@@ -15,7 +15,7 @@ Hi, I'm Vincent Malic and I'm an Information Science PhD student at Indiana Univ
 
 * Using Latent Dirichlet Allocation to explore the thematic structure of the _Standard Histories_ (正史), a collection of documents which cover Chinese history from the mythological era to the end of the Ming Dynasty.
 
-* Revisiting the authorship identification task for _The Federalist Papers_[^1], using a Convolutional Neural Network to get around feature engineering. 
+* Visualizing the internal representations of Convolutional Neural Networks trained on texts.
 
 * Working with Bryant Paul, Yanyan Zhou, and Niki Fritz at the Media School on modelling aggression and behavior co-occurrence in pornography. 
 
