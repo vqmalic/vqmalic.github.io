@@ -28,5 +28,3 @@ Hi, I'm Vincent Malic and I'm an Information Science PhD student at Indiana Univ
 * Xu, J., Ding, Y., & Malic, V. (2015). Author Credit for Transdisciplinary Collaboration. _PloS one_, 10(9), e0137968.
 
 * Finlay, S. C., Johnson, M., Malic, V., Hank, C., Liu, X., Ni, C., & Sugimoto, C. R. (2011). Exploring connections of the biblioblogosphere. _Proceedings of the American Society for Information Science and Technology, 48_(1), 1-4.
-
-[^1]: ["Mosteller, F., & Wallace, D. (1964). Inference and disputed authorship: The Federalist."](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwidgfPftenLAhXMtYMKHeQ7CHAQFggdMAA&url=https%3A%2F%2Fwww.stat.cmu.edu%2FExams%2Fmosteller.pdf&usg=AFQjCNHLYXyFW2n9LkRxkkQFGvfnqDwANQ&sig2=Dbp81LLb3Fg2D-kK5DoxRQ)
